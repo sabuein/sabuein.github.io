@@ -1,19 +1,14 @@
-/* CSS comments are just like multi-line JavaScript ones.*/
-
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
     font-family: monospace;
+    list-style: square;
 }
 
 li {
     list-style: circle;
-}
-
-.list {
-    list-style: square;
 }
 
 #date {
