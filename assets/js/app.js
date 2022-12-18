@@ -1,6 +1,8 @@
-let today = new Date();
-let formatDate = today.toDateString();
-let selectDateElement = document.getElementById("date");
-selectDateElement.innerHTML = formatDate;
+let today = new Date(),
+    dateElement = document.getElementById("date");
 
-console.log("Attention: You need to enable JavaScript to view the full site.");
+try {
+    dateElement.innerHTML = today.toDateString();
+} catch(error) {
+    dateElement.innerHTML = error.message;
+}
