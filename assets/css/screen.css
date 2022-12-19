@@ -12,12 +12,15 @@ body {
 }
 
 ul {
-    font-family: var(--code-font);
     list-style: square;
 }
 
+ol {
+    list-style: upper-roman;
+}
+
 li {
-    list-style: circle;
+    font-family: var(--code-font);
 }
 
 #date {
