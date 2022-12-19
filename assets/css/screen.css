@@ -1,9 +1,18 @@
+:root {
+    --code-font: monospace;
+    --text-font: Arial, Helvetica, sans-serif;
+    --text-size: 16px;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--text-font);
+    font-size: var(--text-size);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 ul {
-    font-family: monospace;
+    font-family: var(--code-font);
     list-style: square;
 }
 
@@ -12,7 +21,21 @@ li {
 }
 
 #date {
-    font-size: 12px;
+    font-size: .5rem;
     font-style: italic;
     font-weight: bold;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #dedede;
+        --text-color: #080808;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #080808;
+        --text-color: #dedede;
+    }
 }
