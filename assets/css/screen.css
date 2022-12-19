@@ -2,13 +2,15 @@
     --code-font: monospace;
     --text-font: Arial, Helvetica, sans-serif;
     --text-size: 16px;
+    --text-color: black;
+    --background-color: white;
 }
 
 body {
     font-family: var(--text-font);
     font-size: var(--text-size);
-    background-color: var(--background-color);
     color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 ul {
