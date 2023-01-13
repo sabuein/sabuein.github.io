@@ -33,22 +33,22 @@ details {
     padding: .5rem .5rem 0;
     border: 1px solid #c5c5c5;
     border-radius: 4px;
-    cursor: pointer;
 }
 
 summary {
     margin: .5rem .5rem 0;
     padding: 1rem;
     font-weight: bold;
+    cursor: pointer;   
 }
 
 details[open] {
-    padding: 1rem;
+    padding: 1rem;   
 }
 
 details[open] summary {
     margin-bottom: .5rem;
-    border-bottom: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;  
 }
 
 #date {
