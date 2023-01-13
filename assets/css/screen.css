@@ -95,13 +95,6 @@ footer {
     background-position: center;
 }
 
-.my-image img:hover {
-    margin-left: 5rem;
-    margin-top: 5rem;
-    scale: 1.85;
-    cursor: zoom-in;
-}
-
 @media (prefers-color-scheme: light) {
     :root {
         --background-color: #dedede;
