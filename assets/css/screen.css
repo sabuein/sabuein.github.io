@@ -5,7 +5,8 @@
 }
 
 :root {
-    --code-font: monospace;
+    --code-font-one: monospace;
+    --code-font-two: ui-monospace;
     --text-font: Arial, Helvetica, sans-serif;
     --text-size: 16px;
     --text-color: black;
@@ -16,7 +17,7 @@
 body {
     margin: 0 auto;
     padding: 1rem;
-    font-family: var(--text-font);
+    font-family: var(--code-font-one);
     font-size: var(--text-size);
     color: var(--text-color);
     background-color: var(--background-color);
@@ -25,6 +26,14 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
     margin: 1rem 0;
+}
+
+figure {
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.85rem;
 }
 
 ul {
@@ -41,31 +50,32 @@ ol, ul {
     padding-inline-start: 5rem;
 }
 
-li {
-    font-family: var(--code-font);
-}
-
 details {
     margin: 1rem 0;
-    padding: .5rem .5rem 0;
-    border: 1px solid #c5c5c5;
+    margin-bottom: 1rem;
+    border: 1px solid #858585;
     border-radius: 4px;
+    font-family: var(--code-font-two);
+    background-color: #e7e7e7;
 }
 
 summary {
-    margin: .5rem .5rem 0;
     padding: 1rem;
     font-weight: bold;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
-details[open] {
-    padding: 1rem;   
+summary:hover {
+    background-color: #d3d3d3;
 }
 
 details[open] summary {
-    margin-bottom: .5rem;
-    border-bottom: 1px solid #c5c5c5;  
+    
+    border-bottom: 1px solid #858585;
+}
+
+details[open] div {
+    margin: 1rem;
 }
 
 footer {
@@ -81,8 +91,15 @@ footer {
 .my-image img {
     width: 200px;
     max-height: 200px;
-    border-radius: 50%;
+    border-radius: 1rem;
     background-position: center;
+}
+
+.my-image img:hover {
+    margin-left: 5rem;
+    margin-top: 5rem;
+    scale: 1.85;
+    cursor: zoom-in;
 }
 
 @media (prefers-color-scheme: light) {
