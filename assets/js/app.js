@@ -1,10 +1,10 @@
 const yallah = () => {
     let today = new Date(),
         hour = today.getHours(),
-        dateElement = document.getElementById("date");
+        dataModified = document.getElementById("lastModified");
 
     try {
-        dateElement.innerHTML = today.toDateString();
+        dataModified.innerHTML = document.lastModified;
         // To-Do, Maybe?
         // Apply the light or dark theme based on the time of day
         if (hour >= 8 && hour < 17) {
@@ -13,7 +13,7 @@ const yallah = () => {
             console.log("It's dark!")
         }
     } catch (error) {
-        dateElement.innerHTML = error.message;
+        dataModified.innerHTML = error.message;
     }
 }
 
