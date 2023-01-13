@@ -29,7 +29,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 figure {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+    max-width: 30rem;
+}
+
+figcaption {
+    margin-bottom: .5rem;
+    text-align: center;
 }
 
 p {
@@ -89,8 +95,7 @@ footer {
 }
 
 .my-image img {
-    width: 200px;
-    max-height: 200px;
+    width: 100%;
     border-radius: 1rem;
     background-position: center;
 }
