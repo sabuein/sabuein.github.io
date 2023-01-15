@@ -9,9 +9,7 @@
     --code-font-two: ui-monospace;
     --text-font: Arial, Helvetica, sans-serif;
     --text-size: 16px;
-    --text-color: black;
-    --background-color: white;
-    --site-width: 1080px; 
+    --site-width: 1080px;
 }
 
 body {
@@ -24,8 +22,32 @@ body {
     max-width: var(--site-width);
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    margin: 1rem 0;
+a:link {
+    text-decoration: none;
+    color: var(--link-unvisited);
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--link-hover);
+}
+
+a:active {
+    color: var(--link-active);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 1.25rem 0;
 }
 
 figure {
@@ -50,7 +72,8 @@ ol {
     list-style: upper-roman;
 }
 
-ol, ul {
+ol,
+ul {
     margin-block-start: 1rem;
     margin-block-end: 1rem;
     padding-inline-start: 5rem;
@@ -62,7 +85,7 @@ details {
     border: 1px solid #858585;
     border-radius: 4px;
     font-family: var(--code-font-two);
-    background-color: #e7e7e7;
+    background-color: var(--details-color);
 }
 
 summary {
@@ -72,12 +95,11 @@ summary {
 }
 
 summary:hover {
-    background-color: #d3d3d3;
+    background-color: var(--summary-hover-color);
 }
 
 details[open] summary {
-    
-    border-bottom: 1px solid #858585;
+    border-bottom: 1px solid var(--summary-border-color);
 }
 
 details[open] div {
@@ -102,14 +124,28 @@ footer {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --background-color: #dedede;
-        --text-color: #080808;
+        --text-color: #262b2f;
+        --background-color: #f1f8fa;
+        --details-color: #c6e3f730;
+        --summary-hover-color: #24a0ed30;
+        --summary-border-color: #0075b320;
+        --link-unvisited: #246bce;
+        --link-visited: #246bce;
+        --link-hover: #8811ff;
+        --link-active: #3f00ff;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #080808;
-        --text-color: #dedede;
+        --text-color: #edf1fe;
+        --background-color: #262b2f;
+        --details-color: #0f3b5730;
+        --summary-hover-color: #21455930;
+        --summary-border-color: #0f3b5730;
+        --link-unvisited: #f1f1f1;
+        --link-visited: #f1f1f1;
+        --link-hover: #acc2d9;
+        --link-active: #3a2efe;
     }
 }
