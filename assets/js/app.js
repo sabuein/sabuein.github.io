@@ -13,6 +13,27 @@ const yallah = () => {
             console.log("It's dark!")
         }
 
+        let address = [4, 44.4];
+        const location = tt.map({
+            key: "bNImqGuYGADbG6YV0CeG4k2PRkAgbkTz",
+            container: "map",
+            center: "address",
+            zoom: 10
+        });
+
+        location.on("load", ()=> {
+            new tt.Popup().setLagLat(address).setText("Hello there!").addTo(location);
+            // new tt.Marker().setLngLat(address).addTo(location);
+        });
+        
+        
+        // tt.setProductInfo("<your-product-name>", "<your-product-version>");
+        
+        
+        
+        // map.addControl(new tt.FullscreenControl());
+        // map.addControl(new tt.NavigationControl());
+
     } catch (error) {
         dataModified.innerHTML = error.message;
     }
