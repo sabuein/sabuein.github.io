@@ -1,0 +1,22 @@
+:root {
+    --color-text-base: ;
+    --color-text-inverted: ;
+    --color-background-base: ;
+    --color-background-inverted: ;
+}
+
+/* primary, inverted, muted, danger, success */
+
+[data-theme="default"] {
+    --color-text-base: ;
+    --color-text-inverted: ;
+    --color-background-base: ;
+    --color-background-inverted: ;
+}
+
+[data-theme="dark"] {
+    --color-text-base: ;
+    --color-text-inverted: ;
+    --color-background-base: ;
+    --color-background-inverted: ;
+}

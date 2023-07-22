@@ -1,71 +1,70 @@
 * {
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --code-font-one: monospace;
-    --code-font-two: ui-monospace;
-    --text-font: Arial, Helvetica, sans-serif;
-    --text-size: 16px;
-    --site-width: 1080px;
+  --code-font-one: monospace;
+  --code-font-two: ui-monospace;
+  --text-font: Arial, Helvetica, sans-serif;
+  --text-size: 16px;
+  --site-width: 1080px;
 }
 
 @media (prefers-color-scheme: light) {
-    :root {
-        --text-color: #262b2f;
-        --background-color: #f1f8fa;
-        --details-color: #c6e3f730;
-        --summary-hover-color: #24a0ed30;
-        --summary-border-color: #0075b320;
-        --link-unvisited: #246bce;
-        --link-visited: #246bce;
-        --link-hover: #8811ff;
-        --link-active: #3f00ff;
-    }
+  :root {
+    --text-color: #262b2f;
+    --background-color: #f1f8fa;
+    --details-color: #c6e3f730;
+    --summary-hover-color: #24a0ed30;
+    --summary-border-color: #0075b320;
+    --link-unvisited: #246bce;
+    --link-visited: #246bce;
+    --link-hover: #8811ff;
+    --link-active: #3f00ff;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --text-color: #edf1fe;
-        --background-color: #262b2f;
-        --details-color: #0f3b5730;
-        --summary-hover-color: #21455930;
-        --summary-border-color: #0f3b5730;
-        --link-unvisited: #f1f1f1;
-        --link-visited: #f1f1f1;
-        --link-hover: #acc2d9;
-        --link-active: #3a2efe;
-    }
+  :root {
+    --text-color: #edf1fe;
+    --background-color: #262b2f;
+    --details-color: #0f3b5730;
+    --summary-hover-color: #21455930;
+    --summary-border-color: #0f3b5730;
+    --link-unvisited: #f1f1f1;
+    --link-visited: #f1f1f1;
+    --link-hover: #acc2d9;
+    --link-active: #3a2efe;
+  }
 }
 
 body {
-    margin: 0 auto;
-    padding: 1rem;
-    font-family: var(--code-font-one);
-    font-size: var(--text-size);
-    color: var(--text-color);
-    background-color: var(--background-color);
-    max-width: var(--site-width);
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: var(--code-font-one);
+  font-size: var(--text-size);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: var(--site-width);
 }
 
 a:link {
-    text-decoration: none;
-    color: var(--link-unvisited);
+  text-decoration: none;
+  color: var(--link-unvisited);
 }
 
 a:visited {
-    color: var(--link-visited);
+  color: var(--link-visited);
 }
 
 a:hover {
-    text-decoration: underline;
-    color: var(--link-hover);
+  text-decoration: underline;
+  color: var(--link-hover);
 }
 
 a:active {
-    color: var(--link-active);
+  color: var(--link-active);
 }
 
 h1,
@@ -75,87 +74,103 @@ h4,
 h5,
 h6,
 p {
-    margin: 1.25rem 0;
+  margin: 1.25rem 0;
 }
 
 figure {
-    margin: 1rem 0;
-    max-width: 30rem;
+  margin: 1rem 0;
+  max-width: 30rem;
 }
 
 figcaption {
-    margin-bottom: .5rem;
-    text-align: center;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 p {
-    line-height: 1.85rem;
+  line-height: 1.85rem;
 }
 
 ul {
-    list-style: square;
+  list-style: square;
 }
 
 ol {
-    list-style: upper-roman;
+  list-style: upper-roman;
 }
 
 ol,
 ul {
-    margin-block-start: 1rem;
-    margin-block-end: 1rem;
-    padding-inline-start: 5rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  padding-inline-start: 5rem;
 }
 
 details {
-    margin: 1rem 0;
-    margin-bottom: 1rem;
-    border: 1px solid #858585;
-    border-radius: 4px;
-    font-family: var(--code-font-two);
-    background-color: var(--details-color);
+  margin: 1rem 0;
+  margin-bottom: 1rem;
+  border: 1px solid #858585;
+  border-radius: 4px;
+  font-family: var(--code-font-two);
+  background-color: var(--details-color);
 }
 
 summary {
-    padding: 1rem;
-    font-weight: bold;
-    cursor: pointer;
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 summary:hover {
-    background-color: var(--summary-hover-color);
+  background-color: var(--summary-hover-color);
 }
 
 details[open] summary {
-    border-bottom: 1px solid var(--summary-border-color);
+  border-bottom: 1px solid var(--summary-border-color);
 }
 
 details[open] div {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 #date {
-    font-size: .5rem;
-    font-style: italic;
-    font-weight: bold;
+  font-size: 0.5rem;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .my-image img {
-    width: 100%;
-    border-radius: 1rem;
-    background-position: center;
+  width: 100%;
+  border-radius: 1rem;
+  background-position: center;
 }
 
 .icons-social {
-    margin-top: 1rem;
-    text-align: center;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 /* #map {
     width: 100vw;
     height: 100vh;
 } */
+
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+}
+@media only screen and (min-width: 2000px) {
+  /* for sumo sized (mac) screens */
+}
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+}
+@media only screen and (device-width: 768px) {
+  /* default iPad screens */
+}
