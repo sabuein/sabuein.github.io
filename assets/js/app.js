@@ -1,18 +1,5 @@
 const yallah = () => {
-    let today = new Date(),
-        hour = today.getHours(),
-        dataModified = document.getElementById("lastModified");
-
     try {
-        dataModified.innerHTML = document.lastModified;
-        // To-Do, Maybe?
-        // Apply the light or dark theme based on the time of day
-        if (hour >= 8 && hour < 17) {
-            console.log("It's light!");
-        } else {
-            console.log("It's dark!")
-        }
-
         let address = [4, 44.4];
         const location = tt.map({
             key: "bNImqGuYGADbG6YV0CeG4k2PRkAgbkTz",
@@ -21,26 +8,38 @@ const yallah = () => {
             zoom: 10
         });
 
-        location.on("load", ()=> {
+        location.on("load", () => {
             new tt.Popup().setLagLat(address).setText("Hello there!").addTo(location);
             // new tt.Marker().setLngLat(address).addTo(location);
         });
-        
-        
+
+
         // tt.setProductInfo("<your-product-name>", "<your-product-version>");
-        
-        
-        
+
+
+
         // map.addControl(new tt.FullscreenControl());
         // map.addControl(new tt.NavigationControl());
 
     } catch (error) {
-        dataModified.innerHTML = error.message;
+        console.error(error.message);
     }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    yallah();
+    const dataModified = document.getElementById("lastModified");
+    dataModified.innerHTML = String(document.lastModified);
+
+    // To-Do, Maybe?
+    // Apply the light or dark theme based on the time of day
+    let today = new Date(), hour = today.getHours();
+    if (hour >= 8 && hour < 17) {
+        console.log("It's light!");
+    } else {
+        console.log("It's dark!")
+    }
+
+    // yallah();
 });
 
 // // To-DO: Toggle the automatic dark mode
