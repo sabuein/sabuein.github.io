@@ -20,3 +20,15 @@
     --color-background-base: ;
     --color-background-inverted: ;
 }
+
+body.resume > header {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 15em;
+}
+
+body.resume > header div {
+    flex: 3 0 100%;
+}

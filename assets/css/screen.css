@@ -39,6 +39,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   padding: 1rem;
@@ -50,6 +54,7 @@ body {
 }
 
 a:link {
+  border: 0;
   text-decoration: none;
   color: var(--link-unvisited);
 }
@@ -115,6 +120,14 @@ details {
   background-color: var(--details-color);
 }
 
+details a:link {
+  border-bottom: thin dashed currentColor;
+}
+
+details a:hover {
+  border-bottom: 0;
+}
+
 summary {
   padding: 1rem;
   font-weight: bold;
@@ -154,6 +167,15 @@ footer {
   text-align: center;
 }
 
+.flexy {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
 /* #map {
     width: 100vw;
     height: 100vh;
@@ -162,15 +184,19 @@ footer {
 @media only screen and (min-width: 960px) {
   /* styles for browsers larger than 960px; */
 }
+
 @media only screen and (min-width: 1440px) {
   /* styles for browsers larger than 1440px; */
 }
+
 @media only screen and (min-width: 2000px) {
   /* for sumo sized (mac) screens */
 }
+
 @media only screen and (max-device-width: 480px) {
   /* styles for mobile browsers smaller than 480px; (iPhone) */
 }
+
 @media only screen and (device-width: 768px) {
   /* default iPad screens */
 }
