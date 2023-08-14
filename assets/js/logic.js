@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (hour >= 8 && hour < 17) {
         console.log("It's light!");
     } else {
-        console.log("It's dark!")
+        console.log("It's dark!");
     }
 
     // yallah();
