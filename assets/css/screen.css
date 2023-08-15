@@ -163,6 +163,10 @@ footer {
   background-position: center;
 }
 
+div.icons-social img {
+  max-width: 48px;
+}
+
 .icons-social {
   margin-top: 1rem;
   text-align: center;
