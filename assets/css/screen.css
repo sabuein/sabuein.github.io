@@ -151,6 +151,10 @@ footer {
   text-align: center;
 }
 
+footer p {
+  text-align: center;
+}
+
 #date {
   font-size: 0.5rem;
   font-style: italic;
