@@ -27,8 +27,67 @@ body.resume > header {
     justify-content: space-between;
     align-items: flex-start;
     min-height: 15em;
+    user-select: none;
+    animation: 250ms linear 0s 1 alternate hide-element;
 }
 
 body.resume > header div {
     flex: 3 0 100%;
+}
+
+body.resume > header.scrollable {
+    position: sticky;
+    top: 3%;
+    transition: all 2s ease-in-out 0s;
+    animation: 2s linear 0s 1 alternate show-element;
+}
+
+@keyframes show-element {
+    from { opacity: .1; }
+    to { opacity: 1; }
+}
+
+@keyframes hide-element {
+    0% {
+        opacity: 1;
+        position: sticky;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    100% {
+        opacity: 1;
+        position: relative;
+        transition: all 2s ease-in-out 0s;
+    }
+}
+
+header.scrollable h1,
+header.scrollable div {
+    max-width: 15dvw;
+    position: absolute;
+    left: -17dvw;
+    bottom: -65dvh;
+    transition: all 2s ease-in-out 0s;
+}
+
+header.scrollable nav {
+    position: absolute;
+    transition: all 2s ease-in-out 0s;
+}
+
+header.scrollable nav:first-of-type {
+    left: -17dvw;
+    transition: all 2s ease-in-out 0s;
+}
+
+header.scrollable nav:last-of-type {
+    right: -17dvw;
+    transition: all 2s ease-in-out 0s;
+}
+
+nav menu {
+    list-style-type: none;
 }

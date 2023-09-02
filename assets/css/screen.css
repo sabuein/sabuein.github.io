@@ -1,14 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
   --code-font-one: monospace;
   --code-font-two: ui-monospace;
   --text-font: Arial, Helvetica, sans-serif;
-  --text-size: 16px;
-  --site-width: 960px;
+  --text-size: 18px;
+  --content-width: 60dvw;
+  --site-width: 1280px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -45,12 +47,17 @@ html {
 
 body {
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1em;
   font-family: var(--code-font-one);
   font-size: var(--text-size);
   color: var(--text-color);
   background-color: var(--background-color);
   max-width: var(--site-width);
+  width: var(--content-width);
+}
+
+main {
+  padding: 1em;
 }
 
 a:link {
@@ -79,21 +86,22 @@ h4,
 h5,
 h6,
 p {
-  margin: 1.25rem 0;
+  margin: .5em 0;
+  padding-bottom: .75em;
 }
 
 figure {
-  margin: 1rem 0;
-  max-width: 30rem;
+  margin: 1em 0;
+  max-width: 30em;
 }
 
 figcaption {
-  margin-bottom: 0.5rem;
-  text-align: center;
+  margin: 1em;
+  text-align: start;
 }
 
 p {
-  line-height: 1.85rem;
+  line-height: 1.75em;
   text-align: justify;
 }
 
@@ -107,14 +115,14 @@ ol {
 
 ol,
 ul {
-  margin-block-start: 1rem;
-  margin-block-end: 1rem;
-  padding-inline-start: 5rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 5em;
 }
 
 details {
-  margin: 1rem 0;
-  margin-bottom: 1rem;
+  margin: 1em 0;
+  margin-bottom: 1em;
   border: 1px solid #858585;
   border-radius: 4px;
   font-family: var(--code-font-two);
@@ -130,7 +138,7 @@ details a:hover {
 }
 
 summary {
-  padding: 1rem;
+  padding: 1em;
   font-weight: bold;
   cursor: pointer;
 }
@@ -144,7 +152,7 @@ details[open] summary {
 }
 
 details[open] div {
-  margin: 1rem;
+  margin: 1em;
 }
 
 footer {
@@ -156,23 +164,23 @@ footer p {
 }
 
 #date {
-  font-size: 0.5rem;
+  font-size: .5em;
   font-style: italic;
   font-weight: bold;
 }
 
 .my-image img {
-  width: 100%;
-  border-radius: 1rem;
+  max-width: 100%;
+  border-radius: 1em;
   background-position: center;
 }
 
 div.icons-social img {
-  max-width: 48px;
+  max-width: 3rem;
 }
 
 .icons-social {
-  margin-top: 1rem;
+  margin-top: 1em;
   text-align: center;
 }
 
