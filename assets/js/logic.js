@@ -24,7 +24,23 @@ const yallah = () => {
     } catch (error) {
         console.error(error.message);
     }
-}
+};
+
+const scrollable = (header) => {
+    let offset = 250,
+        lastScrollY = 0;
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY >= offset && window.scrollY > lastScrollY) {
+            // make the main header sticky
+            header.classList.add("scrollable");
+        } else {
+            // make the main header relative
+            setTimeout(header.classList.remove("scrollable"), 100);
+        }
+        lastScrollY = window.scrollY;
+    });
+};
 
 document.addEventListener("DOMContentLoaded", () => {
     const dataModified = document.getElementById("lastModified");
@@ -38,6 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         console.log("It's dark!");
     }
+
+    const x = document.querySelector("body > header");
+    if (!!x) scrollable(x);
 
     // yallah();
 });
