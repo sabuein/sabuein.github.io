@@ -90,6 +90,10 @@ p {
   padding-bottom: .75em;
 }
 
+h2 {
+  font-size: 1.3rem;
+}
+
 figure {
   margin: 1em 0;
   max-width: 30em;
