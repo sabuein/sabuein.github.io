@@ -4,7 +4,7 @@
 const id = (elementId) => document.getElementById(elementId);
 const createElement = (tag, attributes) => Object.assign(document.createElement(tag), attributes);
 
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEYX = "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";
 
 const typeText = (element, text, speed = 30) => {
     let i = 0;
@@ -36,7 +36,7 @@ const generateVideoIntroInternally = async (textarea) => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${OPENAI_API_KEY}`
+                "Authorization": `Bearer ${OPENAI_API_KEYX}`
             },
             body: JSON.stringify({
                 model: selectValue,
