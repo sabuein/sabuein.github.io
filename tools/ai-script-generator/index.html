@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, LLM, ChatGPT, API, PWA">
+    <meta name="description"
+        content="AI&dash;powered tool&comma; built with OpenAI&apos;s GPT&dash;4o mini and OpenAI&apos;s GPT&dash;4o analyzes your video script and generates a compelling&comma; attention&dash;grabbing intro for your YouTube videos&period;">
+    <meta name="author" content="Salaheddin AbuEin">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google-site-verification" content="XXX" />
+    <!-- Refresh document every 30 seconds -->
+    <!-- <meta http-equiv="refresh" content="30" /> -->
+    <link rel="stylesheet" href="assets/css/screen.css" />
+    <title>YouTube Intro Generator &dash; Be Amazed Media</title>
+</head>
+
+<body class="flexy fully">
+    <header class="flexy row fully">
+        <figure>
+            <a href="javascript: window.location.reload();" title="YouTube Intro Generator &dash; Be Amazed Media"><img
+                    src="assets/images/logo.png" title="YouTube Intro Generator &dash; Be Amazed Media"
+                    alt="Be Amazed Media" loading="lazy" width="150" height="98" /></a>
+        </figure>
+        <nav class="icons-social">
+            <a href="https://github.com/sabuein" target="_blank" title="GitHub"><img
+                    src="https://sabuein.github.io/assets/images/social-media/icons8-github-48.png" alt="GitHub"
+                    title="GitHub"></a>
+            <a href="https://www.linkedin.com/in/sabuein/" target="_blank" title="LinkedIn"><img
+                    src="https://sabuein.github.io/assets/images/social-media/icons8-linkedin-48.png" alt="LinkedIn"
+                    title="LinkedIn"></a>
+            <pre>(Icons by <a href="https://icons8.com/" target="_blank" title="Icons8 - Free scoial media icons">Icons8</a>)</pre>
+        </nav>
+    </header>
+    <hgroup class="flexy fully">
+        <h1>YouTube Intro Generator</h1>
+        <p>This AI&dash;powered tool&comma; built with <a
+                href="https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/" target="_blank"
+                title="GPT-4o mini: advancing cost-efficient intelligence by OpenAI">OpenAI&apos;s GPT&dash;4o
+                mini</a> and <a href="https://openai.com/index/hello-gpt-4o/" target="_blank"
+                title="Hello GPT-4o by OpenAI">OpenAI&apos;s GPT&dash;4o</a>&comma; analyzes your video script and
+            generates a compelling&comma; attention&dash;grabbing intro for your YouTube videos&period;</p>
+        <p>Simply paste your script into the form below&comma; click <a href="" target="_top"
+                title="Generate Intro">Generate Intro</a> &comma; and let the AI craft a professional opening that hooks
+            your audience from the very first second&period; Whether you&apos;re a content creator&comma;
+            marketer&comma; or educator&comma; this tool helps you save time and elevate your video content
+            effortlessly&period;</p>
+    </hgroup>
+    <main id="main" class="flexy">
+        <details id="formDetails" name="app" class="fully">
+            <summary>Script</summary>
+            <form id="scriptForm" class="flexy fully">
+                <label for="modelLLM" title="Choose your LLM model" class="flexy row">Choose your LLM model&colon;<select name="model" id="modelLLM" required="required">
+                    <option value="gpt-4o-mini" selected="selected" title="GPT-4o mini">GPT&dash;4o mini</option>
+                    <option value="gpt-4o" title="GPT-4o">GPT&dash;4o</option>
+                </select></label>
+                <label for="scriptText" title="Enter your text below" class="flexy fully">Enter your text below&colon;<textarea name="script" id="scriptText" required="required" autocomplete="off" placeholder="Please paste, or start typing your script here&hellip;" class="fully" rows="4" cols="50" minlength="50" autofocus="autofocus" wrap="soft"></textarea></label>
+                <div class="flexy row">
+                    <input type="submit" id="generateIntro" value="Generate Intro" title="Generate Intro" />
+                    <input type="reset" value="Reset" title="Reset" />
+                </div>
+            </form>
+        </details>
+        <details id="introDetails" name="app" class="fully">
+            <summary>Generated Intro</summary>
+            <output id="generatedIntro" name="result" for="scriptText" form="scriptForm" class="fully"></output>
+        </details>
+    </main>
+    <footer class="flexy fully">
+        <p>Crafted with &hearts; for <strong><a href="https://www.beamazedmedia.com/" target="_blank"
+                    title="Be Amazed Media">Be Amazed Media</a></strong>&period;</p>
+    </footer>
+    <script type="module" src="assets/js/app.mjs"></script>
+</body>
+
+</html>

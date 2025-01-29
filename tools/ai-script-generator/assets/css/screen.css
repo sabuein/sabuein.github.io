@@ -1,0 +1,237 @@
+:root {
+  --text: #181c25;
+  --back: #f8f9fa;
+  --color: #04669b;
+
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+  font-size: 14pt;
+  -webkit-box-sizing: border-box;
+  overflow-y: scroll;
+  height: 100%;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+body {
+  padding: 1rem;
+  color: var(--text);
+  background-color: var(--back);
+  accent-color: var(--color);
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2;
+}
+
+figure {
+  width: 8rem;
+  flex: 0 0 8rem;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  transition: all 150ms linear 0s;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+main {
+  width: 75dvw;
+  max-width: 100%;
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+input,
+button,
+select,
+textarea {
+  padding: 1rem;
+  width: fit-content;
+  flex: 0 0 fit-content;
+  font: inherit;
+}
+
+hgroup:is(.flexy) {
+  width: 92dvw;
+  max-width: 94%;
+  place-items: flex-start;
+}
+
+label,
+select,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  cursor: pointer;
+  user-select: none;
+}
+
+*.fully {
+  width: 100dvw;
+  max-width: 100%;
+}
+
+header:is(.flexy) {
+  padding: 1rem 2rem;
+  justify-content: space-between;
+}
+
+output {
+  white-space: pre-wrap;
+  /* Preserve whitespace and line breaks */
+}
+
+
+textarea {
+  resize: vertical;
+  min-height: 10rem;
+}
+
+textarea:invalid {
+  border: 2px dashed red;
+}
+
+textarea:valid {
+  border: 2px solid lime;
+}
+
+*.flexy {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+*.row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+label,
+h1,
+summary,
+header,
+footer,
+hgroup,
+div {
+  user-select: none;
+}
+
+label:not([for="modelLLM"]):is(.flexy) {
+  padding: 1rem;
+  place-items: flex-start;
+  gap: 2rem;
+}
+
+label:is([for="modelLLM"]):is(.flexy) {
+  padding: 1rem;
+
+}
+
+details {
+  border: .1rem solid var(--color);
+  border-radius: .25rem;
+  padding: 1rem 1rem 0;
+}
+
+summary {
+  font-weight: 700;
+  margin: -1rem -1rem 0;
+  padding: 1rem;
+  border: none;
+  box-shadow: .1rem .1rem .1rem var(--text);
+  cursor: pointer;
+}
+
+summary::marker,
+summary::-webkit-details-marker {
+  display: none
+}
+
+details[open] {
+  padding: 1rem;
+}
+
+details[open] summary {
+  border-bottom: .1rem solid var(--color);
+  margin-bottom: 1rem;
+}
+
+output+button {
+  margin-top: 2rem;
+}
+
+#introDetails:not(:has(p)) {
+  display: none;
+}
+
+a:any-link {
+  padding: .5rem;
+  color: currentColor;
+  text-decoration: none;
+  border-bottom-style: dashed;
+  border-color: var(--color);
+}
+
+a:is(:hover, :focus:active) {
+  color: var(--back);
+  background-color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--color);
+  border-bottom-style: none;
+  scale: 1.1;
+  transition: all 150ms linear 0s;
+}
+
+nav>a:any-link,
+figure a:any-link {
+  padding: 0;
+  text-decoration: none;
+  border-bottom-style: none;
+  line-height: 0;
+  font-size: 0;
+}
+
+figure a:is(:hover, :focus:active),
+nav>a:is(:hover, :focus:active) {
+  padding: 0;
+  color: currentColor;
+  background-color: transparent;
+  border-bottom-style: none;
+  text-decoration: none;
+  scale: 1;
+}
+
+a:is(:hover, :focus:active) img {
+  scale: 1.1;
+  transition: all 150ms linear 0s;
+}
+
+nav pre {
+  font-size: 1rem;
+}
+
+footer {
+  padding: 1rem;
+}
