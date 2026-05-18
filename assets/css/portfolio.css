@@ -1,0 +1,20 @@
+body[data-page='portfolio-redirect'] {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: var(--space-lg);
+}
+
+.redirect-page {
+  width: min(100%, 42rem);
+}
+
+.redirect-card {
+  display: grid;
+  gap: var(--space-lg);
+  text-align: center;
+}
+
+.countdown-text {
+  font-size: 1.05rem;
+}
