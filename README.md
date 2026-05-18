@@ -1,26 +1,54 @@
-# Salaheddin AbuEin
+# sabuein.github.io
 
-## A human, father, husband, digital creative and web developer.
+Personal website for Salaheddin AbuEin.
 
-Welcome to my GitHub page repository. I will work on updating this bit by bit while learning the best practice.
+## Status
+Planning and redesign in progress.
 
-Peace & love,
+This repository is being reorganised around a simple static site architecture using plain HTML, CSS, and JavaScript, with Progressive Web App support.
 
-Salah.
+## Planned structure
 
-### Technologies:
+- `/` — home page
+- `/resume/` — standalone resume/CV page
+- `/portfolio/` — branded redirect page to `https://abuein.dev/portfolio/`
 
-- HTML
-- CSS
-- JavaScript
+## Technical direction
 
+- Plain HTML
+- Layered CSS architecture
+- JavaScript modules with `application.mjs` as the main entry
+- PWA support via `app.webmanifest` and `sw.js`
+- Shared static assets under `/assets/`
 
-### Tools:
+## Design goals
 
-- [Favicon Generator][favicon] for perfect icons on all browsers
-- [Icons8][icons] for social media icons
+- clean modern technical presentation
+- strong mobile experience
+- dark/light theme
+- installable as a PWA
+- offline support for core resources
+- subtle keffiyeh-inspired visual identity
+- recruiter-friendly resume experience
+- strong positioning as a Ghost Expert and full-stack web developer
 
----
+## Content goals
 
-[favicon]: https://realfavicongenerator.net/ "Favicon Generator"
-[icons]: https://icons8.com "Free Icons, Clipart Illustrations, Photos, and Music"
+- concise home page
+- improved standalone resume page
+- portfolio redirect to AbuEin Technologies
+- practical mention of AI-assisted workflows in current role
+- mobile-friendly contact actions including email, call, WhatsApp, share, and downloadable vCard
+
+## Documentation
+
+Planning documentation lives in:
+
+- `docs/specifications-v1.md`
+- `docs/specifications-v1.1.md`
+
+Further specs may be added as the redesign progresses.
+
+## Notes
+
+The current phase is focused on planning, content, structure, and design direction before implementation begins.
