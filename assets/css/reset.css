@@ -1,0 +1,10 @@
+/* Minimal reset */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html:focus-within { scroll-behavior: smooth; }
+body { min-height: 100vh; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+img, picture, svg, canvas { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+a { text-decoration: none; color: inherit; }
+ul[role='list'], ol[role='list'] { list-style: none; }
+button { background: none; border: 0; padding: 0; color: inherit; cursor: pointer; }
