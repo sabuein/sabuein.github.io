@@ -1,0 +1,57 @@
+.hero {
+  padding-top: calc(var(--space-3xl) + var(--space-md));
+}
+
+.hero-grid {
+  display: grid;
+  gap: var(--space-xl);
+  align-items: start;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.hero-copy {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.hero-role {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.hero-summary {
+  max-width: 62ch;
+  font-size: 1.08rem;
+}
+
+.hero-panel {
+  display: grid;
+  gap: var(--space-md);
+  min-height: 100%;
+}
+
+.hero-panel h2 {
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+}
+
+.credential-card {
+  min-height: 100%;
+}
+
+.link-list {
+  margin-top: var(--space-xs);
+}
+
+.hero-actions + .link-list {
+  padding-top: var(--space-xs);
+}
+
+.hero-panel .badge {
+  width: fit-content;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
