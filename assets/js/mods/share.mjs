@@ -2,6 +2,7 @@ function setTemporaryLabel(button, text, timeout = 1600) {
   const original = button.dataset.originalLabel || button.textContent || 'Share';
   button.dataset.originalLabel = original;
   button.textContent = text;
+
   window.setTimeout(() => {
     button.textContent = original;
   }, timeout);

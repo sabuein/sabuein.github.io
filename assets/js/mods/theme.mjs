@@ -12,9 +12,11 @@ function applyTheme(theme) {
 
 function syncToggleState(toggle, theme) {
   if (!toggle) return;
+
   const isDark = theme === 'dark';
   toggle.setAttribute('aria-pressed', String(isDark));
   toggle.setAttribute('aria-label', `Activate ${isDark ? 'light' : 'dark'} theme`);
+
   const label = toggle.querySelector('span:last-child');
   if (label) {
     label.textContent = isDark ? 'Dark' : 'Light';
@@ -31,7 +33,9 @@ export function initTheme() {
   if (!toggle) return;
 
   toggle.addEventListener('click', () => {
-    const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    const nextTheme =
+      document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+
     applyTheme(nextTheme);
     setStoredTheme(nextTheme);
     syncToggleState(toggle, nextTheme);
