@@ -1,12 +1,15 @@
 {
+  "id": "/",
   "name": "Salaheddin AbuEin",
   "short_name": "AbuEin",
   "description": "Ghost Expert and full-stack web developer.",
+  "lang": "en-GB",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#f3f0e8",
   "theme_color": "#5f6f52",
+  "categories": ["portfolio", "business", "productivity"],
   "icons": [
     {
       "src": "/assets/favicon/android-chrome-192x192.png",
